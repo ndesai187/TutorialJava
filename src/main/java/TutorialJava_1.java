@@ -1,7 +1,5 @@
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Nirav on 09/08/16.
@@ -9,23 +7,6 @@ import java.util.List;
 public class TutorialJava_1 {
 
     public static void main(String[] args) {
-
-        int[] intArr = new int[2];
-        intArr[0] = 1;
-        intArr[1] = 2;
-
-        System.out.println(intArr[0]);
-
-        String[] array1 = new String[5];
-        array1[0] = "Nirav";
-        array1[4] = "Desai";
-        System.out.println(array1.length);
-
-        for (int i=0;i< array1.length;i++){
-            System.out.print(array1[i] + " ");
-        }
-
-        System.out.print("\n\n");
 
         System.out.println("------- Arraylist Practice -------\n");
         ArrayList<UsersList> al1 = new ArrayList<UsersList>();
@@ -39,7 +20,6 @@ public class TutorialJava_1 {
 
         List<UsersList> alist = new ArrayList<UsersList>();
         List<UsersList> llist = new LinkedList<UsersList>();
-
         UsersList ul1 = new UsersList(2, "Test", "SG");
 
         //this method will add object for 10k times as per params
@@ -62,6 +42,40 @@ public class TutorialJava_1 {
         MeasureTime.calcTime("remove", ul1, "start", alist, "arraylist");
         MeasureTime.calcTime("remove", ul1, "start", llist, "linkedlist");
 
+        System.out.println("\n\n----------------------------");
+        System.out.println("------- Map Practice -------");
+        System.out.println("----------------------------\n");
+
+        HashMap<Integer, String> hmp1= new HashMap<Integer,String>();
+        LinkedHashMap<Integer, String> lhmp1 = new LinkedHashMap<Integer, String>();
+        TreeMap<Integer, String> tmp1 = new TreeMap<Integer, String>();
+
+        System.out.println("Hashmap Test");
+        testmap(hmp1);
+        System.out.println("\n\nLinkedHashmap Test");
+        testmap(lhmp1);
+        System.out.println("\nTreemap Test");
+        testmap(tmp1);
+
+    }
+
+
+    public  static void testmap(Map<Integer,String> map1){
+        map1.put(10, "Lion");
+        map1.put(2, "Tiger");
+        map1.put(5, "Leopard");
+        map1.put(17, "Elephant");
+        map1.put(91, "Snake");
+        map1.put(12, "Giraffe");
+        map1.put(26, "Hippo");
+        map1.put(13, "Crocodile");
+        map1.put(61, "Fox");
+        map1.put(77, "Dog");
+        map1.put(57, "Cat");
+
+        for (Map.Entry<Integer,String> entry : map1.entrySet()){
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
 
     }
 }
