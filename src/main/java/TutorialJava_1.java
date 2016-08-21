@@ -57,6 +57,12 @@ public class TutorialJava_1 {
         System.out.println("\nTreemap Test");
         testmap(tmp1);
 
+        System.out.println("\n\n----------------------------");
+        System.out.println("------- Set Practice -------");
+        System.out.println("----------------------------\n");
+
+        TutorialSet.createSet();
+
     }
 
 
