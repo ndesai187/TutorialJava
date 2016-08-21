@@ -26,6 +26,8 @@ public class TutorialJava_1 {
         // start = index 0
         // last = simple add, witout index
         // mid = random position
+
+        /* Commenting temporary to reduce runtime
         System.out.println("\n---Take 1--- adding elements");
         MeasureTime.calcTime("add", ul1, "start", alist, "arraylist" );
         MeasureTime.calcTime("add", ul1, "start", llist, "linkedlist" );
@@ -57,11 +59,17 @@ public class TutorialJava_1 {
         System.out.println("\nTreemap Test");
         testmap(tmp1);
 
+
+
         System.out.println("\n\n----------------------------");
         System.out.println("------- Set Practice -------");
         System.out.println("----------------------------\n");
 
         TutorialSet.createSet();
+        TutorialObjSet.createSet();
+
+        */
+        TutorialComparator.runCompare();
 
     }
 
