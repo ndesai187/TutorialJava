@@ -69,7 +69,9 @@ public class TutorialJava_1 {
         TutorialObjSet.createSet();
 
         */
-        TutorialComparator.runCompare();
+        TutorialSort.runCompare();
+
+        TutorialNaturalOrder.runNaturalOrder();
 
     }
 
