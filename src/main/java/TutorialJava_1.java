@@ -71,7 +71,14 @@ public class TutorialJava_1 {
         */
         TutorialSort.runCompare();
 
+        //to be written in the class. it's empty now.
         TutorialNaturalOrder.runNaturalOrder();
+
+        //Queue totorial
+        TutorialQueue.runExample();
+
+        //Tutorial for Iterator
+        TutorialIterator.runExample();
 
     }
 
