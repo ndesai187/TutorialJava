@@ -80,6 +80,10 @@ public class TutorialJava_1 {
         //Tutorial for Iterator
         TutorialIterator.runExample();
 
+        //Iterator HTML
+        System.out.println("\n\n--------  Get HTML through iteration \n\n");
+        ObjectIterable.runIteration();
+
     }
 
 

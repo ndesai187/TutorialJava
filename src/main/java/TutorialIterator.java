@@ -22,11 +22,7 @@ public class TutorialIterator implements Iterable<String>{
             System.out.println("The value of interator is : " + it1.next());
         }
 
-        ObjectIterable obj1 = new ObjectIterable();
 
-        for (String url : obj1) {
-            System.out.println(url);
-        }
     }
 
     @Override
